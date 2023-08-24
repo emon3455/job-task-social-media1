@@ -24,15 +24,15 @@ const sideNavLink = [
     title: "Collection Name One",
     nestedRoutes: [
       {
-        path: "/coollectionOne/room1",
+        path: "/collectionOne/room1",
         title: "Room Name One",
       },
       {
-        path: "/coollectionOne/room2",
+        path: "/collectionOne/room2",
         title: "Room Name Two",
       },
       {
-        path: "/coollectionOne/room3",
+        path: "/collectionOne/room3",
         title: "Room Name Three",
       },
     ],
@@ -41,15 +41,15 @@ const sideNavLink = [
     title: "Collection Name Two",
     nestedRoutes: [
       {
-        path: "/coollectionTwo/room1",
+        path: "/",
         title: "Room Name One",
       },
       {
-        path: "/coollectionTwo/room2",
+        path: "/",
         title: "Room Name Two",
       },
       {
-        path: "/coollectionTwo/room3",
+        path: "/",
         title: "Room Name Three",
       },
     ],
@@ -58,15 +58,15 @@ const sideNavLink = [
     title: "Collection Name Three",
     nestedRoutes: [
       {
-        path: "/coollectionThree/room1",
+        path: "/",
         title: "Room Name One",
       },
       {
-        path: "/coollectionThree/room2",
+        path: "/",
         title: "Room Name Two",
       },
       {
-        path: "/coollectionThree/room3",
+        path: "/",
         title: "Room Name Three",
       },
     ],

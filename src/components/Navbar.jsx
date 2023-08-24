@@ -4,7 +4,7 @@ import { FaBell, FaRocket, FaSearch } from 'react-icons/fa';
 const Navbar = () => {
 
     return (
-        <div className="w-full md:flex justify-between items-center bg-white p-4 shadow-2xl space-y-2">
+        <div className="w-full bg-white md:flex justify-between items-center shadow-2xl space-y-2 lg:space-y-0 p-4">
             <div className="w-full md:w-1/2 relative">
                 <div className="hidden md:flex absolute inset-y-0 left-0 pl-3 items-center pointer-events-none">
                     <FaSearch className="text-gray-400" />
