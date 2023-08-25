@@ -1,6 +1,6 @@
 "use client"
 import React, { useEffect, useState } from 'react';
-import CModal from './CModal';
+import CModal from '../customComponents/CModal';
 
 const CollectionModal = () => {
 
