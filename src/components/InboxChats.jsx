@@ -33,7 +33,7 @@ const InboxChats = ({ chats }) => {
                         <div className='w-12 h-12 relative'>
                             <img className="w-full h-full rounded-full" src={chat.userImage} alt={chat.userName} />
                             <div
-                                className={`${chat?.active ? 'bg-green-500' : 'bg-gray-300'
+                                className={`${chat?.active ? 'bg-green-500' : ''
                                     } w-3 h-3 rounded-full absolute top-9 right-0 bottom-0`}
                             ></div>
                         </div>
