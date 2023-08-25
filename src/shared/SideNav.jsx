@@ -13,7 +13,7 @@ const SideNav = () => {
     const sideNavToggle = useSelector(state => state.sideNav.isOpen)
     
     return (
-        <aside className={`${sideNavToggle ? "w-60" : "w-0 hidden"} min-h-screen shadow-2xl bg-white`}>
+        <aside className={`${sideNavToggle ? "w-72" : "w-0 hidden"} min-h-screen shadow-2xl bg-white`}>
 
             <div className="p-4 lg:space-y-6 ">
                 <ul className='space-y-1'>
@@ -27,7 +27,7 @@ const SideNav = () => {
                                 obj.nestedRoutes ? (
                                     <details>
                                         <summary className={`flex items-center justify-between cursor-pointer ${pathname === obj?.title
-                                            ? "bg-blue-600 text-white"
+                                            ? "bg-indigo-600 text-white hover:bg-indigo-600"
                                             : "bg-white"
                                             }
                                             `}>
@@ -39,7 +39,7 @@ const SideNav = () => {
                                             (
                                                 <li key={nestedIndex} className={`hover:bg-violet-200 p-2 transition-all duration-300 rounded mt-1
                                             ${pathname === nestedObj?.path
-                                                        ? "bg-blue-600 text-white hover:bg-blue-600"
+                                                        ? "bg-indigo-600 text-white hover:bg-indigo-600"
                                                         : "bg-white"
                                                     } border-l-2 border-blue-700
                                             `}>
