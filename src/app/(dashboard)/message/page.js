@@ -6,7 +6,7 @@ import { newInbox, oldInbox } from '@/content/inbox/inbox';
 
 const MessagePage = () => {
     return (
-        <div className='w-full flex'>
+        <div className='w-full flex h-screen'>
             <Inbox newInbox={newInbox} oldInbox={oldInbox}/>
             <ChatRoom messages={messages}/>
         </div>

@@ -28,7 +28,16 @@ const InboxChats = ({ chats }) => {
                     key={index}
                     className={`flex items-center p-2 hover:bg-sky-100 cursor-pointer`}
                 >
-                    <img className="w-12 h-12 rounded-full mr-4" src={chat.userImage} alt={chat.userName} />
+
+                    <div className='mr-4 relative'>
+                        <div className='w-12 h-12 relative'>
+                            <img className="w-full h-full rounded-full" src={chat.userImage} alt={chat.userName} />
+                            <div
+                                className={`${chat?.active ? 'bg-green-500' : 'bg-gray-300'
+                                    } w-3 h-3 rounded-full absolute top-9 right-0 bottom-0`}
+                            ></div>
+                        </div>
+                    </div>
                     <div className="flex-grow">
                         <h3 className="text-md font-semibold">
                             {chat.userName}

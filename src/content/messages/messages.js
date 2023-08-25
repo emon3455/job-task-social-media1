@@ -49,6 +49,36 @@ const messages = [
         text: "I'm doing my company project",
         timestamp: "2023-08-25T11:50:00Z",
     },
+    {
+        id: 6,
+        user: {
+            id: 101,
+            name: "John Doe",
+            img: "https://i.ibb.co/jw2Z9R8/emon11.png",
+        },
+        text: "And You?",
+        timestamp: "2023-08-25T10:44:00Z",
+    },
+    {
+        id: 7,
+        user: {
+            id: 102,
+            name: "Jane Smith",
+            img: "https://i.ibb.co/pXGRZzX/Emon-Image.jpg",
+        },
+        text: "I'm doing my company project",
+        timestamp: "2023-08-25T11:50:00Z",
+    },
+    {
+        id: 8,
+        user: {
+            id: 101,
+            name: "John Doe",
+            img: "https://i.ibb.co/jw2Z9R8/emon11.png",
+        },
+        text: "And You?",
+        timestamp: "2023-08-25T10:44:00Z",
+    },
 
 ];
 
