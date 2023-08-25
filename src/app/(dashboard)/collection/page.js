@@ -1,9 +1,10 @@
+import CollectionModal from '@/components/CollectionModal';
 import React from 'react';
 
 const CollectionPage = () => {
     return (
         <div>
-            CollectionPage
+            <CollectionModal/>
         </div>
     );
 };

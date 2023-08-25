@@ -19,7 +19,7 @@ const SideNav = () => {
                 <ul className='space-y-1'>
                     {sideNavLink.map((obj, indx) => (
                         <li key={indx} className={`${obj.nestedRoutes ? "" : "hover:bg-violet-200"} transition-all duration-300 p-2 ${pathname === obj?.path
-                            ? "bg-indigo-600 text-white hover:bg-indigo-700 rounded-sm"
+                            ? "bg-indigo-600 text-white hover:bg-indigo-600 rounded-sm"
                             : "bg-white"
                             }`}>
 
@@ -39,9 +39,9 @@ const SideNav = () => {
                                             (
                                                 <li key={nestedIndex} className={`hover:bg-violet-200 p-2 transition-all duration-300 rounded mt-1
                                             ${pathname === nestedObj?.path
-                                                        ? "bg-violet-200"
+                                                        ? "bg-blue-600 text-white hover:bg-blue-600"
                                                         : "bg-white"
-                                                    }
+                                                    } border-l-2 border-blue-700
                                             `}>
 
                                                     <Link href={nestedObj.path} className=''>
