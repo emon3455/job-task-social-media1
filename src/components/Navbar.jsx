@@ -8,7 +8,6 @@ const Navbar = () => {
 
     const dispatch = useDispatch();
     const sideNavToggle = useSelector(state=> state.sideNav.isOpen)
-    console.log(sideNavToggle);
 
     return (
         <div className="w-full bg-white shadow-2xl flex justify-between p-4">
