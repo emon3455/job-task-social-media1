@@ -5,19 +5,17 @@ import Link from 'next/link';
 import sideNavLink from '@/content/sidenav/SidenavLinks';
 import { FaChevronDown } from 'react-icons/fa';
 import { usePathname } from "next/navigation";
+import { useSelector } from 'react-redux';
 
 const SideNav = () => {
 
     const pathname = usePathname();
-
+    const sideNavToggle = useSelector(state => state.sideNav.isOpen)
+    
     return (
-        <aside className="w-60 min-h-screen shadow-2xl">
-            <div className="flex justify-between items-center p-4 bg-white shadow-md">
-                <h2 className="text-lg font-semibold">Social Club</h2>
-                <button className="text-2xl focus:outline-none">...</button>
-            </div>
+        <aside className={`${sideNavToggle ? "w-60" : "w-0 hidden"} min-h-screen shadow-2xl bg-white`}>
 
-            <div className="p-4 space-y-10 lg:space-y-16 bg-white">
+            <div className="p-4 lg:space-y-6 ">
                 <ul className='space-y-1'>
                     {sideNavLink.map((obj, indx) => (
                         <li key={indx} className={`${obj.nestedRoutes ? "" : "hover:bg-violet-200"} transition-all duration-300 p-2 ${pathname === obj?.path
